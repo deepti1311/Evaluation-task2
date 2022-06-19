@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $("#form").validate({
+  $("form").validate({
     rules: {
       name: {
         required: true,
@@ -36,8 +36,6 @@ $(document).ready(function () {
       thu: { required: true },
       fri: { required: true },
       sat: { required: true },
-
-
     },
 
     messages: {
@@ -298,12 +296,12 @@ function disable_cb7() {
 //   }
 // });
 
-let name = localStorage.getItem("name");
-let age = localStorage.getItem("age");
-let email = localStorage.getItem("email");
-let phone = localStorage.getItem("phone");
+// let name = localStorage.getItem("name");
+// let age = localStorage.getItem("age");
+// let email = localStorage.getItem("email");
+// let phone = localStorage.getItem("phone");
 
-let gender = localStorage.getItem("gender");
+// let gender = localStorage.getItem("gender");
 
 // {
 //   $("#displayArea").append(
@@ -331,3 +329,153 @@ let gender = localStorage.getItem("gender");
 //     $(".edit").attribute("href", url);
 //   });
 // }
+
+// $("form").submit(function (event) {
+//   event.preventDefault();
+
+//   if (
+//     $("#name").valid() === true &&
+//     $("#age").valid() === true &&
+//     $("#email").valid() === true &&
+//     $("#phone").valid() === true &&
+//     $("input[name=gender]:checked") != undefined &&
+//     $("#config").prop("checked", true) &&
+//     ($("#1").valid() ||
+//       $("#2").valid() ||
+//       $("#3").valid() ||
+//       $("#4").valid() ||
+//       $("#5").valid() ||
+//       $("#6").valid() ||
+//       $("#7").valid())
+//   ) {
+//     // if(( ($('#sunday').valid() === true)) && ( ($('#1').valid() === true)))
+//     //   if(( ($('#monday').valid() === true)) && ( ($('#2').valid() === true)))
+//     //     if(( ($('#tuesday').valid() === true)) && ( ($('#3').valid() === true)))
+
+//     if ($("#config").prop("checked") == true) {
+//       if ($("#sunday").prop("checked") == true && $("#1").val() != "None") {
+//       }
+//       if ($("#monday").prop("checked") == true && $("#2").val() != "None") {
+//       }
+//       if ($("#tuesday").prop("checked") == true && $("#3").val() != "None") {
+//       }
+//       if ($("#wednesday").prop("checked") == true && $("#4").val() != "None") {
+//       }
+//       if ($("#thrusday").prop("checked") == true && $("#5").val() != "None") {
+//       }
+//       if ($("#friday").prop("checked") == true && $("#6").val() != "None") {
+//       }
+//       if ($("#saturday").prop("checked") == true && $("#7").val() != "None") {
+//       }
+
+//       let name = $("#name").val();
+//       let age = $("#age").val();
+//       let phone = $("#phone").val();
+//       let email = $("#email").val();
+//       let gender = $("input[type=radio][name=gender]:checked").val();
+//       let sunday = $("#1").val();
+//       let monday = $("#2").val();
+//       let tuesday = $("#3").val();
+//       let wednesday = $("#4").val();
+//       let thursday = $("#5").val();
+//       let friday = $("#6").val();
+//       let saturday = $("#7").val();
+
+//       console.log({
+//         name,
+//         age,
+//         phone,
+//         email,
+//         gender,
+//         sunday,
+//         monday,
+//         tuesday,
+//         wednesday,
+//         thursday,
+//         friday,
+//         saturday,
+//       });
+
+//       const Data = {
+//         name: name,
+//         age: age,
+//         phone: phone,
+//         email: email,
+//         gender: gender,
+//         sunday: sunday,
+//         monday: monday,
+//         tuesday: tuesday,
+//         wednesday: wednesday,
+//         thursday: thursday,
+//         friday: friday,
+//         saturday: saturday,
+//       };
+
+//       const userdata = localStorage.setItem("Data", JSON.stringify(Data));
+
+//       console.log("userdata", userdata);
+//       window.open("../html/test-data.html");
+//     }
+//   }
+// });
+
+// ( ($('#1').valid() === true) || ($('#2').valid() === true) || ($('#3').valid() === true) || ($('#4').valid() === true) || ($('#5').valid() === true) || ($('#6').valid() === true) || ($('#7').valid() === true))
+// && ($('name = pickupTime').valid() === true)
+
+// const Data = JSON.parse(localStorage.getItem("Data"));
+// const {
+//   name,
+//   age,
+//   phone,
+//   email,
+//   gender,
+//   sunday,
+//   monday,
+//   tuesday,
+//   wednesday,
+//   thursday,
+//   friday,
+//   saturday,
+// } = Data;
+// console.log({
+//   name,
+//   age,
+//   phone,
+//   email,
+//   gender,
+//   sunday,
+//   monday,
+//   tuesday,
+//   wednesday,
+//   thursday,
+//   friday,
+//   saturday,
+// });
+
+// $("#disTable tbody").append(
+//   '<tr class="child"><td>' +
+//     name +
+//     "</td><td>" +
+//     age +
+//     "</td><td>" +
+//     phone +
+//     "</td><td>" +
+//     email +
+//     "</td><td>" +
+//     gender +
+//     "</td><td>" +
+//     sunday +
+//     "</td><td>" +
+//     monday +
+//     "</td><td>" +
+//     tuesday +
+//     "</td><<td>" +
+//     wednesday +
+//     "</td><td>" +
+//     thursday +
+//     "</td><td>" +
+//     friday +
+//     "</td><td>" +
+//     saturday +
+//     "</td></tr>"
+// );
